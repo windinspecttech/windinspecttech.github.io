@@ -1,8 +1,94 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WindInspectTech - Wind Turbine Inspection Technology</title><meta name="description" content="Blade inspection robots, blade-to-tower clearance monitoring, nacelle lidar and ultrasonic bolt preload control for wind turbines."></head>
-<body style="font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6">
-<h1>WindInspectTech</h1>
-<p>WindInspectTech provides inspection and monitoring tools for wind turbines: internal blade inspection robots, blade-to-tower clearance monitoring, nacelle lidar, rotor diagnostics and ultrasonic bolt preload control.</p>
-<p>These tools help wind farm operators and service teams find blade damage, clearance risks and loose bolted joints before they become long outages.</p>
-<p><a href="https://windinspecttech.com/?utm_source=github&amp;utm_medium=referral">Visit WindInspectTech</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drone vs Internal Robot Blade Inspection: Which to Use?</title>
+<meta name="description" content="Drone and internal robot blade inspection compared: what each can see, access needs, downtime, data quality and how operators combine them in practice.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://windinspecttech.netlify.app/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Drone vs Internal Robot Blade Inspection: Which to Use?">
+<meta property="og:description" content="Drone and internal robot blade inspection compared: what each can see, access needs, downtime, data quality and how operators combine them in practice.">
+<meta property="og:url" content="https://windinspecttech.netlify.app/">
+<meta property="og:image" content="https://windinspecttech.netlify.app/images/blade-leading-edge-erosion-damage.webp">
+<meta property="og:site_name" content="WindInspectTech notes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Drone vs Internal Robot Blade Inspection: Which to Use?">
+<meta name="twitter:description" content="Drone and internal robot blade inspection compared: what each can see, access needs, downtime, data quality and how operators combine them in practice.">
+<meta name="twitter:image" content="https://windinspecttech.netlify.app/images/blade-leading-edge-erosion-damage.webp">
+<style>*{box-sizing:border-box}body{margin:0;font:17px/1.7 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1d2433;background:#f6f8fb}
+header.top{background:#0f6b5c;color:#fff;padding:14px 20px}header.top a{color:#fff;text-decoration:none;font-weight:600}
+main{max-width:820px;margin:0 auto;background:#fff;padding:28px 22px 40px}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:1.8em 0 .5em;border-bottom:2px solid #e6ebf2;padding-bottom:.2em}h3{font-size:1.15rem;margin:1.3em 0 .3em}
+p{margin:.7em 0}a{color:#0f6b5c}figure{margin:1.5em 0}figure img{width:100%;height:auto;border-radius:8px;display:block}
+figcaption{font-size:.88rem;color:#5b6577;margin-top:.4em}table{border-collapse:collapse;width:100%;font-size:.95rem;margin:1em 0}
+th,td{border:1px solid #dde3ec;padding:8px 10px;text-align:left;vertical-align:top}th{background:#eef3f9}
+.lead{font-size:1.08rem;color:#3a4458}.meta{font-size:.85rem;color:#6b7486}.faq h3{margin-top:1.1em}.contact{background:#eef3f9;padding:14px 18px;border-radius:8px}
+footer{max-width:820px;margin:0 auto;padding:18px 22px;font-size:.88rem;color:#5b6577}@media(max-width:600px){h1{font-size:1.6rem}main{padding:20px 16px}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Drone vs Internal Robot: Choosing a Wind Turbine Blade Inspection Method", "description": "Drone and internal robot blade inspection compared: what each can see, access needs, downtime, data quality and how operators combine them in practice.", "image": ["https://windinspecttech.netlify.app/images/blade-leading-edge-erosion-damage.webp"], "datePublished": "2026-11-03", "dateModified": "2026-11-03", "inLanguage": "en", "mainEntityOfPage": "https://windinspecttech.netlify.app/", "author": {"@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/"}, "publisher": {"@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can a drone see internal blade damage?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no. Drones photograph the outer surface. Internal cracks or bond-line issues only show externally once they have progressed far enough to affect the skin."}}, {"@type": "Question", "name": "Does internal robot inspection replace drones?", "acceptedAnswer": {"@type": "Answer", "text": "No. They answer different questions. Most programmes use drones for fleet-wide external screening and internal inspection where risk or findings justify it."}}, {"@type": "Question", "name": "Which method needs longer downtime?", "acceptedAnswer": {"@type": "Answer", "text": "Both require the turbine stopped. Drone flights per turbine are usually short; internal inspection needs hub access and set-up, so planning matters more."}}, {"@type": "Question", "name": "What should a blade inspection report contain?", "acceptedAnswer": {"@type": "Answer", "text": "Location-referenced findings, images, severity classification, the inspection conditions and the reviewer, so results can be compared over time."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/", "email": "sales@windinspecttech.com", "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "sales@windinspecttech.com", "availableLanguage": ["English"]}}</script>
+</head>
+<body>
+<header class="top"><a href="https://windinspecttech.com/?utm_source=netlify&amp;utm_medium=referral">WindInspectTech</a></header>
+<main>
+<article>
+<h1>Drone vs Internal Robot: Choosing a Wind Turbine Blade Inspection Method</h1>
+<p class="meta">Published 3 November 2026 · WindInspectTech technical notes</p>
+
+<p class="lead">Blade inspection used to mean rope access teams. Today two technologies dominate the conversation: drones photographing the outside of blades, and crawler robots inspecting the inside. They are often presented as rivals, but they look at different parts of the same structure.</p>
+<h2>What each method actually sees</h2>
+<p>A drone flies around a stopped turbine and photographs the external surfaces: leading edge, trailing edge, pressure and suction sides, tip and lightning receptors. An internal robot enters through the blade root and records the interior: shell inner surfaces, spar caps, shear webs and bond lines.</p>
+<figure><img src="images/blade-leading-edge-erosion-damage.webp" alt="Close-up of wind turbine blade leading edge erosion with cracked coating" width="1200" height="675" loading="lazy" decoding="async"><figcaption>Leading-edge erosion is an external defect drones capture well. AI-generated illustration.</figcaption></figure>
+<h3>Typical findings by method</h3>
+<table>
+<thead><tr><th>Finding</th><th>Drone (external)</th><th>Internal robot</th></tr></thead>
+<tbody>
+<tr><td>Leading-edge erosion</td><td>Yes</td><td>No</td></tr>
+<tr><td>Lightning damage at receptors</td><td>Yes</td><td>Sometimes, if it penetrates</td></tr>
+<tr><td>Trailing-edge splits</td><td>Yes, once visible</td><td>Yes, from inside</td></tr>
+<tr><td>Shear web or bond-line cracks</td><td>No</td><td>Yes</td></tr>
+<tr><td>Laminate wrinkles, whitening</td><td>Rarely</td><td>Yes</td></tr>
+</tbody>
+</table>
+<h2>Access, safety and downtime</h2>
+<h3>Drone inspections</h3>
+<p>Drones need the turbine stopped and the rotor positioned, then flight time per turbine is relatively short. Weather limits flights: strong wind, rain and poor light reduce image quality or ground the drone. Regulations on <a href="https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle">unmanned aircraft</a> also apply.</p>
+<h3>Internal robot inspections</h3>
+<p>Internal inspection requires hub access, lock-out and set-up at the blade root. In exchange, interior conditions are sheltered from weather and the robot keeps technicians out of the narrowing cavity. Compatibility depends on root openings and internal obstructions, which is why an access check comes first.</p>
+<figure><img src="images/internal-blade-crawler-inspection-view.webp" alt="Internal blade inspection crawler with lights on a composite wall" width="1200" height="675" loading="lazy" decoding="async"><figcaption>Internal robots record surfaces drones cannot reach. Image: WindInspectTech.</figcaption></figure>
+<h2>Data quality and evidence</h2>
+<p>For both methods, the value lies in traceable images: each picture tied to a blade, side and radial position. Without location data, findings cannot be compared between campaigns.</p>
+<ul>
+<li><strong>Drone data:</strong> high-resolution external images, often processed into stitched blade maps.</li>
+<li><strong>Robot data:</strong> illuminated internal images from multiple cameras along the cavity, with position recording.</li>
+<li><strong>Both:</strong> AI-assisted triage is common, with human verification before reporting.</li>
+</ul>
+<p>As an internal example, the <a href="https://windinspecttech.com/products/wit-br60-internal-blade-inspection-robot/?utm_source=netlify&amp;utm_medium=referral">WIT-BR60 internal blade crawler</a> combines multiple illuminated cameras, AI-assisted review with location recording and human-verified structured reports.</p>
+<h2>How operators combine the two</h2>
+<figure><img src="images/blade-shear-web-internal-structure.webp" alt="Internal shear web and cavity of a wind turbine blade lit by a lamp" width="1200" height="675" loading="lazy" decoding="async"><figcaption>Shear webs and bond lines sit inside the blade. AI-generated illustration.</figcaption></figure>
+<ol>
+<li><strong>Fleet screening by drone</strong> on a regular cycle to catch external damage and erosion.</li>
+<li><strong>Risk-based internal inspection</strong> where drone findings, blade type history, age or events point to interior risk.</li>
+<li><strong>Targeted repair and re-inspection</strong>, using both records as a baseline.</li>
+</ol>
+<p>This layered approach spends internal-inspection time where it matters, while still covering every blade externally.</p>
+<h2>Questions to settle before choosing</h2>
+<ul>
+<li>Which defects drive your risk for this blade type: external erosion, or internal structural issues?</li>
+<li>Do root openings and internal layouts allow robot access?</li>
+<li>What report format do engineering, insurers or warranty partners require?</li>
+<li>How will results be compared year to year?</li>
+</ul>
+<p>WindInspectTech discusses this decision in more depth in its guide to <a href="https://windinspecttech.com/resources/wind-turbine-drone-inspection-vs-internal-blade-robot/?utm_source=netlify&amp;utm_medium=referral">drone inspection vs internal blade robots</a>, and lists the full range of blade, clearance and bolt systems at <a href="https://windinspecttech.com/?utm_source=netlify&amp;utm_medium=referral">WindInspectTech</a>.</p>
+
+<h3>Building a combined inspection record</h3>
+<p>The practical challenge in combining methods is the record, not the hardware. External and internal images should share one coordinate system for each blade, such as distance from the root and side, so that an external crack and an internal bond-line indication at the same position can be linked. Agree on that reference before the first campaign, and ask suppliers to deliver data in a format that fits it.</p>
+<p>Severity scales should match too. If the drone provider ranks findings from one to five and the internal team uses a different scale, engineers will spend time translating instead of deciding. A shared scale, with written definitions and example images, makes repair planning faster and helps track whether a defect is growing.</p>
+<p>Finally, plan for re-inspection. A defect found today is most valuable when it can be measured again at the next visit. Store raw images, not only summary reports, so later reviewers can compare like with like, and record weather, light and access details with every campaign so differences in image quality are not mistaken for changes in the blade itself.</p><p>Budget questions follow naturally. Fleet-wide drone screening spreads cost thinly across every blade, while internal inspection concentrates effort where risk is highest. Reviewing findings from both after each season shows whether that balance is right, and lets the inspection plan for the next year be adjusted on evidence rather than habit. Over several seasons, that loop usually reveals which blade types and positions deserve closer attention.</p>
+<section class="faq"><h2>Frequently asked questions</h2><h3>Can a drone see internal blade damage?</h3><p>Generally no. Drones photograph the outer surface. Internal cracks or bond-line issues only show externally once they have progressed far enough to affect the skin.</p><h3>Does internal robot inspection replace drones?</h3><p>No. They answer different questions. Most programmes use drones for fleet-wide external screening and internal inspection where risk or findings justify it.</p><h3>Which method needs longer downtime?</h3><p>Both require the turbine stopped. Drone flights per turbine are usually short; internal inspection needs hub access and set-up, so planning matters more.</p><h3>What should a blade inspection report contain?</h3><p>Location-referenced findings, images, severity classification, the inspection conditions and the reviewer, so results can be compared over time.</p></section>
+<section class="contact"><h2>Contact</h2><p>Deciding how to combine external and internal blade inspection? Tell us the blade types and what your reports must show and we can discuss a plan. Email <a href="mailto:sales@windinspecttech.com">sales@windinspecttech.com</a> or visit <a href="https://windinspecttech.com/contact/?utm_source=netlify&amp;utm_medium=referral">the WindInspectTech contact page</a>.</p></section>
+</article>
+</main>
+<footer><p>&copy; 2026 WindInspectTech · <a href="https://windinspecttech.com/?utm_source=netlify&amp;utm_medium=referral">windinspecttech.com</a> · Contact: <a href="mailto:sales@windinspecttech.com">sales@windinspecttech.com</a></p></footer>
+</body>
+</html>
