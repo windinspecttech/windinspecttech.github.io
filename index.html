@@ -1,8 +1,89 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WindInspectTech - Wind Turbine Inspection Technology</title><meta name="description" content="Blade inspection robots, blade-to-tower clearance monitoring, nacelle lidar and ultrasonic bolt preload control for wind turbines."></head>
-<body style="font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6">
-<h1>WindInspectTech</h1>
-<p>WindInspectTech provides inspection and monitoring tools for wind turbines: internal blade inspection robots, blade-to-tower clearance monitoring, nacelle lidar, rotor diagnostics and ultrasonic bolt preload control.</p>
-<p>These tools help wind farm operators and service teams find blade damage, clearance risks and loose bolted joints before they become long outages.</p>
-<p><a href="https://windinspecttech.com/?utm_source=github&amp;utm_medium=referral">Visit WindInspectTech</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimating Wind Turbine Inspection Cost and Downtime Impact</title>
+<meta name="description" content="A step-by-step method to estimate the cost of a wind turbine inspection campaign, including downtime, lost production, crew time and the value of findings.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://windinspecttech.pages.dev/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estimating Wind Turbine Inspection Cost and Downtime Impact">
+<meta property="og:description" content="A step-by-step method to estimate the cost of a wind turbine inspection campaign, including downtime, lost production, crew time and the value of findings.">
+<meta property="og:url" content="https://windinspecttech.pages.dev/">
+<meta property="og:image" content="https://windinspecttech.pages.dev/images/wind-turbine-inspection-campaign-site.webp">
+<meta property="og:site_name" content="WindInspectTech notes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Estimating Wind Turbine Inspection Cost and Downtime Impact">
+<meta name="twitter:description" content="A step-by-step method to estimate the cost of a wind turbine inspection campaign, including downtime, lost production, crew time and the value of findings.">
+<meta name="twitter:image" content="https://windinspecttech.pages.dev/images/wind-turbine-inspection-campaign-site.webp">
+<style>*{box-sizing:border-box}body{margin:0;font:17px/1.7 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1d2433;background:#f6f8fb}
+header.top{background:#0f6b5c;color:#fff;padding:14px 20px}header.top a{color:#fff;text-decoration:none;font-weight:600}
+main{max-width:820px;margin:0 auto;background:#fff;padding:28px 22px 40px}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:1.8em 0 .5em;border-bottom:2px solid #e6ebf2;padding-bottom:.2em}h3{font-size:1.15rem;margin:1.3em 0 .3em}
+p{margin:.7em 0}a{color:#0f6b5c}figure{margin:1.5em 0}figure img{width:100%;height:auto;border-radius:8px;display:block}
+figcaption{font-size:.88rem;color:#5b6577;margin-top:.4em}table{border-collapse:collapse;width:100%;font-size:.95rem;margin:1em 0}
+th,td{border:1px solid #dde3ec;padding:8px 10px;text-align:left;vertical-align:top}th{background:#eef3f9}
+.lead{font-size:1.08rem;color:#3a4458}.meta{font-size:.85rem;color:#6b7486}.faq h3{margin-top:1.1em}.contact{background:#eef3f9;padding:14px 18px;border-radius:8px}
+footer{max-width:820px;margin:0 auto;padding:18px 22px;font-size:.88rem;color:#5b6577}@media(max-width:600px){h1{font-size:1.6rem}main{padding:20px 16px}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Estimate the Real Cost of a Wind Turbine Inspection Campaign", "description": "A step-by-step method to estimate the cost of a wind turbine inspection campaign, including downtime, lost production, crew time and the value of findings.", "image": ["https://windinspecttech.pages.dev/images/wind-turbine-inspection-campaign-site.webp"], "datePublished": "2026-11-03", "dateModified": "2026-11-03", "inLanguage": "en", "mainEntityOfPage": "https://windinspecttech.pages.dev/", "author": {"@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/"}, "publisher": {"@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is usually the largest cost in an inspection?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the site. For high-wind periods, lost production during the stop can exceed the service price; for low-wind scheduling, crew and equipment costs dominate."}}, {"@type": "Question", "name": "How do I estimate lost production?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply the expected power during the stop (from the power curve and forecast or historical wind) by the stop duration and the energy price or tariff."}}, {"@type": "Question", "name": "Should I include the value of findings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Inspection is justified by avoided failures and earlier repairs. Use your own failure and repair history rather than generic figures."}}, {"@type": "Question", "name": "How can downtime be reduced?", "acceptedAnswer": {"@type": "Answer", "text": "Schedule in low-wind windows, bundle tasks into the same stop, prepare access in advance and use methods with shorter set-up where they meet the requirement."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "WindInspectTech", "url": "https://windinspecttech.com/", "email": "sales@windinspecttech.com", "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "sales@windinspecttech.com", "availableLanguage": ["English"]}}</script>
+</head>
+<body>
+<header class="top"><a href="https://windinspecttech.com/?utm_source=pages&amp;utm_medium=referral">WindInspectTech</a></header>
+<main>
+<article>
+<h1>How to Estimate the Real Cost of a Wind Turbine Inspection Campaign</h1>
+<p class="meta">Published 3 November 2026 · WindInspectTech technical notes</p>
+
+<p class="lead">Inspection budgets are often judged by the price on a service quote. The real cost of an inspection campaign is broader: turbines stop producing, crews travel, data must be reviewed, and findings trigger repairs. This article sets out a transparent method to estimate the total, using your own inputs rather than industry averages.</p>
+<h2>Why the quote is only part of the cost</h2>
+<p>A turbine stopped for inspection produces nothing. If the stop falls on a windy day, the lost revenue can be significant. Conversely, a cheap inspection that misses a developing defect can lead to a much larger repair later. A good estimate captures both sides.</p>
+<figure><img src="images/wind-turbine-inspection-campaign-site.webp" alt="Wind turbines on site during an inspection campaign" width="1200" height="675" loading="lazy" decoding="async"><figcaption>A campaign plan should account for every turbine stop. Image: WindInspectTech.</figcaption></figure>
+<h2>Cost components to include</h2>
+<table>
+<thead><tr><th>Component</th><th>How to estimate</th><th>Data source</th></tr></thead>
+<tbody>
+<tr><td>Service or equipment cost</td><td>Quote per turbine or per day</td><td>Supplier quotes</td></tr>
+<tr><td>Own crew time</td><td>Hours × loaded hourly rate</td><td>Internal HR/finance</td></tr>
+<tr><td>Lost production</td><td>Expected kW × hours stopped × energy price</td><td>Power curve, wind data, tariff</td></tr>
+<tr><td>Access and logistics</td><td>Travel, lifts, permits, vessel days offshore</td><td>Operations records</td></tr>
+<tr><td>Data review and reporting</td><td>Engineer hours per turbine</td><td>Past campaigns</td></tr>
+</tbody>
+</table>
+<h2>Estimating downtime and lost production</h2>
+<p>Downtime is the stop duration from shutdown to restart, not only the time the inspection tool is working. Include lock-out, set-up, the inspection itself, packing up and restart checks.</p>
+<h3>A simple formula</h3>
+<p>Lost energy (kWh) = expected average power during the stop (kW) × stop duration (h). Expected power comes from the turbine's <a href="https://en.wikipedia.org/wiki/Wind_turbine#Power_curve">power curve</a> applied to forecast or historical wind for the planned window. Multiply by your energy price or tariff to get lost revenue.</p>
+<h3>Worked structure, not numbers</h3>
+<p>Rather than quote generic values, build a small spreadsheet with one row per turbine and columns for planned date, expected wind speed, expected power, stop hours and price. Summing the rows gives a campaign total you can defend, and changing the planned dates shows how much scheduling saves.</p>
+<h2>Valuing what the inspection finds</h2>
+<p>The benefit side is harder but essential. Use your own records:</p>
+<ul>
+<li>How often were defects of each type found in past campaigns?</li>
+<li>What did early repairs cost compared with late repairs or replacements?</li>
+<li>How long were turbines down after unplanned failures?</li>
+</ul>
+<p>Multiplying the probability of finding a defect by the cost difference between early and late repair gives an expected avoided cost per turbine. This is the figure that justifies the inspection budget.</p>
+<h2>Ways to reduce total cost</h2>
+<figure><img src="images/tower-maintenance-task-bundling.webp" alt="Bolted tower flange inside a wind turbine tower during maintenance" width="1200" height="675" loading="lazy" decoding="async"><figcaption>Bundling tasks like bolt checks into the same stop reduces downtime. AI-generated illustration.</figcaption></figure>
+<ol>
+<li><strong>Schedule in low-wind windows</strong> to cut lost production.</li>
+<li><strong>Bundle tasks</strong> such as bolt preload checks, blade inspection and sensor maintenance into one stop.</li>
+<li><strong>Pre-check access</strong> so crews do not discover blockers on the day; WindInspectTech publishes an <a href="https://windinspecttech.com/resources/internal-blade-inspection-robot-access-checklist/?utm_source=pages&amp;utm_medium=referral">access checklist for internal blade inspection</a>.</li>
+<li><strong>Standardise reports</strong> so review time per turbine falls and results compare between years.</li>
+<li><strong>Use risk-based frequency</strong>, inspecting high-risk blade types more often and low-risk ones less.</li>
+</ol>
+<h2>Presenting the estimate</h2>
+<p>Decision makers respond best to a range rather than a single figure. Present a low, expected and high case based on wind conditions and finding rates, and state every assumption. When suppliers provide specifications, record the conditions behind each value so comparisons are fair. <a href="https://windinspecttech.com/?utm_source=pages&amp;utm_medium=referral">WindInspectTech</a> follows that principle by listing source conditions next to its product specifications.</p>
+
+<h3>Common estimation pitfalls</h3>
+<p>Several errors recur in inspection business cases. One is counting only tool time and ignoring lock-out, travel and restart, which can make a method look faster than it is in practice. Another is using annual average wind speed for a campaign planned in a specific season, which can overstate or understate lost production. A third is treating findings as free: every confirmed defect leads to engineering review, repair planning and sometimes another stop, and those costs belong in the plan.</p>
+<p>It is also easy to forget the cost of not knowing. If a blade type has a history of internal defects and no inspection is planned, the risk does not disappear; it simply moves into the unplanned failure column. Making that column explicit, with your own historical failure records, is what turns an inspection budget from an expense into a decision with visible trade-offs.</p>
+<p>Review the estimate after every campaign. Compare planned and actual stop hours, finding rates and repair costs, and update the model, so each year the assumptions become more grounded in your own fleet.</p>
+<section class="faq"><h2>Frequently asked questions</h2><h3>What is usually the largest cost in an inspection?</h3><p>It depends on the site. For high-wind periods, lost production during the stop can exceed the service price; for low-wind scheduling, crew and equipment costs dominate.</p><h3>How do I estimate lost production?</h3><p>Multiply the expected power during the stop (from the power curve and forecast or historical wind) by the stop duration and the energy price or tariff.</p><h3>Should I include the value of findings?</h3><p>Yes. Inspection is justified by avoided failures and earlier repairs. Use your own failure and repair history rather than generic figures.</p><h3>How can downtime be reduced?</h3><p>Schedule in low-wind windows, bundle tasks into the same stop, prepare access in advance and use methods with shorter set-up where they meet the requirement.</p></section>
+<section class="contact"><h2>Contact</h2><p>Building a business case for an inspection programme? Share your fleet size and current approach and we can discuss which inputs matter for your sites. Email <a href="mailto:sales@windinspecttech.com">sales@windinspecttech.com</a> or visit <a href="https://windinspecttech.com/contact/?utm_source=pages&amp;utm_medium=referral">the WindInspectTech contact page</a>.</p></section>
+</article>
+</main>
+<footer><p>&copy; 2026 WindInspectTech · <a href="https://windinspecttech.com/?utm_source=pages&amp;utm_medium=referral">windinspecttech.com</a> · Contact: <a href="mailto:sales@windinspecttech.com">sales@windinspecttech.com</a></p></footer>
+</body>
+</html>
